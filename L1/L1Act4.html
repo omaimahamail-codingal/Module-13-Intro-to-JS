@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Operators Example</title>
+  </head>
+  <body>
+    <h2>JavaScript Operators</h2>
+    <p>This example shows how different mathematical operators work in JavaScript.</p>
+
+    <p id="demo"></p>
+
+    <script>
+      /*
+        In JavaScript, operators are used to perform actions on values. Common mathematical operators are:
+        +  (addition)
+        -  (subtraction)
+        *  (multiplication)
+        /  (division)
+        %  (modulus - remainder)
+      */
+
+      // Declare and assign values
+      var x = 10;
+      var y = 3;
+
+      // Perform different operations
+      var addition = x + y;         // Adds x and y
+      var subtraction = x - y;      // Subtracts y from x
+      var multiplication = x * y;   // Multiplies x and y
+      var division = x / y;         // Divides x by y
+      var modulus = x % y;          // Remainder of x divided by y
+
+      // Display results on the page
+      document.getElementById("demo").innerHTML =
+        "x = " + x + ", y = " + y + "<br>" +
+        "Addition (x + y) = " + addition + "<br>" +
+        "Subtraction (x - y) = " + subtraction + "<br>" +
+        "Multiplication (x * y) = " + multiplication + "<br>" +
+        "Division (x / y) = " + division + "<br>" +
+        "Modulus (x % y) = " + modulus;
+
+      // Log results to the console for testing
+      console.log("Addition:", addition);
+      console.log("Subtraction:", subtraction);
+      console.log("Multiplication:", multiplication);
+      console.log("Division:", division);
+      console.log("Modulus:", modulus);
+    </script>
+  </body>
+</html>

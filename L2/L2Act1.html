@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functions in JavaScript</title>
+  </head>
+  <body>
+    <h2>Functions in JavaScript</h2>
+    <p>In this activity, learn how to create a basic function in JavaScript and call it using an on-click event.</p>
+
+    <!-- Button that calls the function when clicked -->
+    <button onclick="myFunction()">Execute JS Function</button>
+
+    <p id="output"></p>
+
+    <script>
+      /*
+        A JavaScript function is a block of code designed to perform a specific task.
+        It runs when it is "invoked" (called).
+        The syntax is:
+            function functionName() {
+                // code to execute
+            }
+      */
+
+      // Function declaration
+      function myFunction() {
+        // Display text inside the paragraph with id="output"
+        document.getElementById("output").innerHTML = "✅ Function is called successfully!";
+      }
+    </script>
+  </body>
+</html>

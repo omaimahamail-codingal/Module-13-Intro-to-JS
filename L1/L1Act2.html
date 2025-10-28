@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Variables Example</title>
+  </head>
+
+  <body>
+    <h1>JavaScript Variables</h1>
+    <p>This program adds two numbers using JavaScript variables.</p>
+
+    <!-- Placeholders for output -->
+    <p id="numbers"></p>
+    <p id="result"></p>
+
+    <script>
+    /*
+        - We declare two variables: num1 and num2
+        - We display their values
+        - We calculate and display their sum
+    */
+
+      // Declare and assign values
+      var num1 = 12;
+      var num2 = 8;
+
+      // Show the numbers being added
+      document.getElementById("numbers").innerHTML =
+        "The numbers are: " + num1 + " and " + num2;
+
+      // Calculate the sum
+      var sum = num1 + num2;
+
+      // Display the result
+      document.getElementById("result").innerHTML = "The total sum is: " + sum;
+
+      // Log details to the console
+      console.log("Number 1:", num1);
+      console.log("Number 2:", num2);
+      console.log("Sum:", sum);
+    </script>
+  </body>
+</html>

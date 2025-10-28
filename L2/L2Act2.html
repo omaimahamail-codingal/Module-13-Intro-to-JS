@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scope of Variables in Functions</title>
+  </head>
+  <body>
+    <h2>Scope of Variables in JavaScript Functions</h2>
+    <p>
+      In this activity, learn what <b>local variables</b> are and how they can
+      be accessed.
+    </p>
+
+    <p>A function can access variables defined inside the function:</p>
+
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+      /*
+        Local variables:
+        - Declared inside a function using 'var', 'let', or 'const'.
+        - Can only be accessed within that function.
+        - Trying to use them outside the function causes an error.
+      */
+
+      function myFunction() {
+        var a = 4; // local variable
+        // The function can access and use 'a'
+        document.getElementById("demo").innerHTML =
+          "Inside the function: a × a = " + a * a;
+      }
+
+      // Trying to access 'a' outside the function
+      try {
+        document.getElementById("demo1").innerHTML =
+          "Outside the function: a = " + a;
+      } catch (error) {
+        document.getElementById("demo1").innerHTML =
+          "Outside the function: 'a' is not defined because it is a local variable.";
+      }
+    </script>
+  </body>
+</html>

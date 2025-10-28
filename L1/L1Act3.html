@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Statements Example</title>
+  </head>
+  <body>
+    <h2>JavaScript Statements</h2>
+    <p>
+      A <b>JavaScript program</b> is made up of a list of
+      <b>statements</b> that are executed, one after another, by the computer.
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+      /*
+        Each JavaScript statement ends with a semicolon (;)
+        and tells the browser to perform an action.
+        Below, we use several statements to calculate a sum.
+      */
+
+      // Statement 1: Declare variables
+      var x, y, z;
+
+      // Statement 2: Assign value to x
+      x = 5;
+
+      // Statement 3: Assign value to y
+      y = 6;
+
+      // Statement 4: Add x and y, store result in z
+      z = x + y;
+
+      // Statement 5: Display the result on the web page
+      document.getElementById("demo").innerHTML =
+        "The value of z is " + z + ".";
+
+      // Statement 6: Log the result to the console
+      console.log("Calculated value of z:", z);
+    </script>
+  </body>
+</html>
