@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Objects and its Properties</h2>
+
+    <p>There are two ways to access an object property:</p>
+    <p>1. person.propertyName</p>
+    <p>2. person["propertyName"]</p>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+      // In this activity, learn about OBJECTS and how to access their properties
+      // Create an object with properties (key:value pairs)
+      var person = {
+        firstName: "I",
+        age: 20,
+      };
+
+      // Using dot notation to access object properties
+      document.getElementById("demo").innerHTML =
+        person.firstName + " am " + person.age + " years old";
+
+      // Using dot notation to access object properties
+      document.getElementById("demo2").innerHTML =
+        person["firstName"] + " am " + person["age"] + " years old";
+    </script>
+  </body>
+</html>

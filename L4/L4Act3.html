@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Arguments Object in JavaScript</h2>
+    <p>
+      In this activity, learn how the <b>arguments</b> object works and how to
+      find the largest number from the given arguments.
+    </p>
+
+    <p id="result"></p>
+
+    <script>
+      // Function to find the maximum number
+      // 'arguments' holds all values passed to the function (like an array)
+      function findMax() {
+        var max = arguments[0]; // Start by assuming first value is the biggest
+
+        // Loop through all arguments to check which one is largest
+        for (var i = 1; i < arguments.length; i++) {
+          if (arguments[i] > max) {
+            max = arguments[i];
+          }
+        }
+
+        return max;
+      }
+
+      // Display the result
+      document.getElementById("result").innerHTML =
+        "Largest number is: " + findMax(8, 4, 5, 6, 2);
+    </script>
+  </body>
+</html>
