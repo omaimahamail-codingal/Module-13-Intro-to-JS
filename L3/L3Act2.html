@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Loops</h2>
+    <p>
+      In this activity, learn about different types of loops and how they are
+      useful in JavaScript.
+    </p>
+
+    <script>
+      var fruits = [
+        "Apple",
+        "Mango",
+        "Grapes",
+        "Watermelon",
+        "Jackfruit",
+        "Banana",
+      ];
+      var person = {
+        Name: "Jennifer",
+        Gender: "Female",
+        Age: 32,
+        Job: "Actress",
+      };
+
+      // ----- For Loop -----
+      // Repeats a block of code a specific number of times
+      document.write("<h3>For Loop:</h3>");
+      for (var i = 0; i < fruits.length; i++) {
+        document.write(fruits[i] + "<br>");
+      }
+
+      // ----- While Loop -----
+      // Runs as long as a condition is true
+      document.write("<h3>While Loop:</h3>");
+      var i = 0;
+      while (i < fruits.length) {
+        document.write(fruits[i] + "<br>");
+        i++;
+      }
+
+      // ----- Do...While Loop -----
+      // Executes once before checking the condition
+      document.write("<h3>Do...While Loop:</h3>");
+      var j = 0;
+      do {
+        document.write(fruits[j] + "<br>");
+        j++;
+      } while (j < fruits.length);
+
+      // ----- For...Of Loop -----
+      // Loops through each value in an array
+      document.write("<h3>For...Of Loop:</h3>");
+      for (var fruit of fruits) {
+        document.write(fruit + "<br>");
+      }
+
+      // ----- For...In Loop -----
+      // Loops through properties in an object
+      document.write("<h3>For...In Loop:</h3>");
+      for (var key in person) {
+        document.write(key + ": " + person[key] + "<br>");
+      }
+    </script>
+  </body>
+</html>

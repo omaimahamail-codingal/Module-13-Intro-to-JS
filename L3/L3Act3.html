@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+// switch checks one value and matches it with a case
+// Here we check the current day number (0–6)
+var day;
+
+switch (new Date().getDay()) {  
+  case 0: // if the day number is 0
+    day = "Sunday";
+    break; // stop checking further cases
+
+  case 1: // if the day number is 1
+    day = "Monday";
+    break;
+
+  case 2: // if the day number is 2
+    day = "Tuesday";
+    break;
+
+  case 3: // if the day number is 3
+    day = "Wednesday";
+    break;
+
+  case 4: // if the day number is 4
+    day = "Thursday";
+    break;
+
+  case 5: // if the day number is 5
+    day = "Friday";
+    break;
+
+  case 6: // if the day number is 6
+    day = "Saturday";
+    break;
+}
+
+// Show the result on the page
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript String and Number Methods</h2>
+    <p>
+      This activity demonstrates basic inbuilt string and number methods in
+      JavaScript.
+    </p>
+
+    <script>
+      // ----- STRING METHODS -----
+      var str = "AmAzInG";
+
+      document.write("<h3>String Methods</h3>");
+      document.write("Original String: " + str);
+      document.write("<br><br>");
+
+      // Convert to uppercase
+      document.write("Uppercase: " + str.toUpperCase());
+      document.write("<br>");
+
+      // Convert to lowercase
+      document.write("Lowercase: " + str.toLowerCase());
+      document.write("<br>");
+
+      // Check if it starts with 'A'
+      document.write("Starts with 'A'? " + str.startsWith("A"));
+      document.write("<br>");
+
+      // Test method using regex
+      var str1 = "I learnt about Methods";
+      var patt = new RegExp("about");
+      var res = patt.test(str1);
+      document.write(
+        "Does the sentence '" + str1 + "' contain 'about'? " + res
+      );
+      document.write("<br><br>");
+
+      // ----- NUMBER METHODS -----
+      document.write("<h3>Number Methods</h3>");
+
+      // Random number between 0 and 1
+      document.write("Random number (0–1): " + Math.random());
+      document.write("<br>");
+
+      // Random number between 0 and 100
+      document.write("Random number (0–100): " + Math.random() * 100);
+      document.write("<br>");
+
+      // Floor value of a decimal number
+      var num = 9.87;
+      document.write("Original Number: " + num);
+      document.write("<br>");
+      document.write("Floor value of 9.87: " + Math.floor(num));
+      document.write("<br>");
+    </script>
+  </body>
+</html>
