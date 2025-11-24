@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Understanding the Call Stack in JavaScript</h2>
+    <p>In this activity, learn how functions call each other and how the call stack processes them.</p>
+
+    <p id="demo"></p>
+
+    <script>
+      // add() is called first from inside average()
+      function add(a, b) {
+        return a + b; // This result is sent back to average()
+      }
+
+      // average() calls add(), waits for the result, then completes its own work
+      function average(a, b) {
+        return add(a, b) / 2;
+        // When add() finishes, average() continues
+      }
+
+      let result = average(10, 20);
+
+      // Display the final result
+      document.getElementById("demo").innerHTML = "Result: " + result;
+    </script>
+  </body>
+</html>
