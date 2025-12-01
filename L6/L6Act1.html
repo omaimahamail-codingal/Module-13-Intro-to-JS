@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML DOM Example</title>
+  </head>
+
+  <body>
+    <h1 id="one">Welcome</h1>
+    <p>This is the welcome message.</p>
+
+    <h2>Technology</h2>
+    <p>This is the technology section.</p>
+
+    <script>
+      // The HTML DOM lets JavaScript access and change HTML elements
+      // Get the <h1> element using its id ("one")
+      var text = document.getElementById("one").innerHTML;
+
+      // Show the content of the heading
+      alert("The first heading is: " + text);
+    </script>
+  </body>
+</html>

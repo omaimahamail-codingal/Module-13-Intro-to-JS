@@ -1,0 +1,35 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/* Apply font to whole page */
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Center the form */
+form {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Spacing for input boxes */
+div {
+  margin-bottom: 10px;
+}
+
+/* Button styling */
+button {
+  cursor: pointer;
+}
+
+/* Message styling */
+#message {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
